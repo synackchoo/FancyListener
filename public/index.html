@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FancyListener Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>FancyListener Dashboard</h1>
+                <div class="header-actions">
+                    <button id="refresh-btn" class="btn btn-primary">Refresh</button>
+                    <button id="export-btn" class="btn btn-secondary">Export for Audit</button>
+                    <button id="clear-btn" class="btn btn-danger">Clear All</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="stats-bar">
+            <div class="stat-card">
+                <div class="stat-label">Total Listeners</div>
+                <div class="stat-value" id="stat-total">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Unique Domains</div>
+                <div class="stat-value" id="stat-domains">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Unique URLs</div>
+                <div class="stat-value" id="stat-urls">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Last Hour</div>
+                <div class="stat-value" id="stat-recent">0</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="group-by">Group By:</label>
+                <select id="group-by" class="select">
+                    <option value="domain">Domain</option>
+                    <option value="parent_url">Parent URL</option>
+                    <option value="timestamp">Time (Newest First)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="filter-input">Filter:</label>
+                <input type="text" id="filter-input" class="input" placeholder="Search listeners...">
+            </div>
+        </div>
+
+        <div id="listeners-container" class="listeners-container">
+            <div class="loading">Loading listeners...</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

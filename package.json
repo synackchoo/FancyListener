@@ -1,0 +1,18 @@
+{
+  "name": "fancylistener",
+  "version": "1.0.0",
+  "description": "CLI logging server for FancyTracker browser extension",
+  "main": "server.js",
+  "bin": {
+    "fancylistener": "./cli.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["fancylistener", "fancytracker", "logging", "security", "postmessage"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
