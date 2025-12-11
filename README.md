@@ -13,7 +13,7 @@ Also it's heavily vibe-coded...**¯\\_(ツ)_/¯**
 
 FancyListener is a security research tool that provides a real-time web dashboard for reviewing and auditing postMessage listeners found on web applications. Creates a localized web service that displays and organizes listeners by domain. From the dashboard you can export to a JSON file allowing for further analysis with other tools. 
 
-** REQUIRES FancyTracker **
+**REQUIRES FancyTracker**
 
 It's designed to work seamlessly with the [FancyTracker browser extension](https://github.com/Zeetaz/FancyTracker-FF) for comprehensive security analysis.
 
