@@ -1,4 +1,5 @@
-Credit where credit is due: Inspired by Zeetaz who wrote FancyTracker (who was inspired by Franz Rosen who wrote postMessage-tracker)
+### Credit where credit is due
+Inspired by Zeetaz who wrote FancyTracker (who was inspired by Franz Rosen who wrote postMessage-tracker)
 This wouldn't be here without them.
 Also it's heavily vibe-coded...so sue me
 
