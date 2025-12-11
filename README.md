@@ -1,7 +1,8 @@
 ### Credit where credit is due
 Inspired by Zeetaz who wrote FancyTracker (who was inspired by Frans Rosén who wrote postMessage-tracker)
 This wouldn't be here without them.
-Also it's heavily vibe-coded...so sue me
+
+Also it's heavily vibe-coded...¯\_(ツ)_/¯
 
 # FancyListener
 
