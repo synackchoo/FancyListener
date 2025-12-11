@@ -1,3 +1,7 @@
+Credit where credit is due: Inspired by Zeetaz who wrote FancyTracker (who was inspired by Franz Rosen who wrote postMessage-tracker)
+This wouldn't be here without them.
+Also it's heavily vibe-coded...so sue me
+
 # FancyListener
 
 > A globally installable CLI tool for capturing and analyzing postMessage listeners detected by the FancyTracker browser extension.
