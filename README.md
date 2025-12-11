@@ -18,19 +18,6 @@ FancyListener is a security research tool that provides a real-time web dashboar
 - **📝 Live Logging** - Console displays each listener as it's detected
 - **🔄 Auto-refresh** - Dashboard updates every 30 seconds
 
-## 📋 Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Web Dashboard](#web-dashboard)
-- [API Endpoints](#api-endpoints)
-- [Security](#security)
-- [Development](#development)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🚀 Installation
 
 ### Prerequisites
