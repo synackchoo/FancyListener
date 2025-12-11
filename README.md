@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
 
-FancyListener is a security research tool that provides a real-time web dashboard for reviewing and auditing postMessage listeners found on web applications. It's designed to work seamlessly with the [FancyTracker browser extension](https://github.com/fransr/postMessage-tracker) for comprehensive security analysis.
+FancyListener is a security research tool that provides a real-time web dashboard for reviewing and auditing postMessage listeners found on web applications. It's designed to work seamlessly with the [FancyTracker browser extension]([https://github.com/fransr/postMessage-tracker](https://github.com/Zeetaz/FancyTracker-FF)) for comprehensive security analysis.
 
 ## ✨ Features
 
