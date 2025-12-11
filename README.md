@@ -15,7 +15,7 @@ It's designed to work seamlessly with the [FancyTracker browser extension](https
 
 - **🖥️ Global CLI Tool** - Install once, use anywhere with the `fancylistener` command
 - **📂 Flexible Output** - Specify custom output directory for listener logs
-- **🔌 Custom Port** - Optional port configuration for multiple instances
+- **🔌 Custom Port** - Optional port configuration
 - **📊 Real-time Dashboard** - Beautiful web interface for viewing listeners
 - **💾 Persistent Storage** - All listeners saved to JSON file
 - **🔒 Security Audit Export** - Export listeners for analysis with security tools
