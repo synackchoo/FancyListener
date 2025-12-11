@@ -1,5 +1,5 @@
 ### Credit where credit is due
-Inspired by Zeetaz who wrote FancyTracker (who was inspired by Franz Rosen who wrote postMessage-tracker)
+Inspired by Zeetaz who wrote FancyTracker (who was inspired by Frans Rosén who wrote postMessage-tracker)
 This wouldn't be here without them.
 Also it's heavily vibe-coded...so sue me
 
@@ -280,12 +280,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Credits
 
+- Inspired by the [FancyTracker](https://github.com/Zeetaz/FancyTracker-FF) **ALSO Required for Use**
 - Based on the original [postMessage-tracker](https://github.com/fransr/postMessage-tracker) by Frans Rosén
-- Part of the [FancyTracker](https://github.com/fransr/postMessage-tracker) project ecosystem
 
 ## 🔗 Related Projects
 
-- [FancyTracker Browser Extension](https://github.com/fransr/postMessage-tracker) - Browser extension for detecting postMessage listeners
+- [FancyTracker Browser Extension](https://github.com/Zeetaz/FancyTracker-FF) - Browser extension for detecting postMessage listeners
 
 ## 📬 Support
 
