@@ -17,7 +17,6 @@ FancyListener is a security research tool that provides a real-time web dashboar
 - **🔒 Security Audit Export** - Export listeners for analysis with security tools
 - **📝 Live Logging** - Console displays each listener as it's detected
 - **🔄 Auto-refresh** - Dashboard updates every 30 seconds
-- **🛡️ Security Hardened** - Protected against prototype pollution, path traversal, and DoS attacks
 
 ## 📋 Table of Contents
 
@@ -217,27 +216,6 @@ Clears all logged listeners.
 
 Deletes a specific listener by ID.
 
-## 🛡️ Security
-
-FancyListener includes multiple security hardening measures:
-
-### Implemented Protections
-
-- ✅ **Prototype Pollution Protection** - Explicit field validation on incoming data
-- ✅ **Path Traversal Prevention** - Validates output directory paths
-- ✅ **DoS Protection** - 10MB payload limit and input validation
-- ✅ **ReDoS Prevention** - Limited filter text length with safe search
-- ✅ **Input Validation** - Type checking on all incoming data
-- ✅ **Error Sanitization** - No stack trace exposure to clients
-- ✅ **Information Disclosure Prevention** - X-Powered-By header disabled
-- ✅ **Strict JSON Parsing** - Only accepts valid JSON objects and arrays
-
-### Security Considerations
-
-⚠️ **Local Use Only**: FancyListener is designed for local security research. Do not expose it to the public internet without additional security measures (authentication, HTTPS, rate limiting, etc.).
-
-⚠️ **Trusted Input**: Only accept listener data from trusted sources (your own FancyTracker extension instances).
-
 ## 🔧 Development
 
 ### Project Structure
@@ -264,99 +242,6 @@ FancyListener/
 # Or with node directly
 node cli.js -o ./logs -p 8080
 ```
-
-### Development Mode
-
-```bash
-# Install dependencies
-npm install
-
-# Run directly
-node cli.js -o ./test-logs -p 3000
-```
-
-## 🐛 Troubleshooting
-
-### Command not found: fancylistener
-
-**Solution:** Run the global installation:
-```bash
-sudo npm install -g .
-# Or
-sudo npm link
-```
-
-### Permission denied when installing globally
-
-**Solution:** Use sudo:
-```bash
-sudo npm install -g .
-```
-
-### Port already in use
-
-**Solution:** Choose a different port:
-```bash
-fancylistener -o ./logs -p 8080
-```
-
-### Can't write to output directory
-
-**Solution:** Ensure the directory is writable or use a different location:
-```bash
-fancylistener -o ~/fancylistener-logs
-```
-
-### Extension not logging
-
-**Checklist:**
-- ✅ Verify logging URL in extension settings matches your server
-- ✅ Check browser console for errors (F12 → Console)
-- ✅ Ensure FancyListener server is running
-- ✅ Test the endpoint manually:
-  ```bash
-  curl -X POST http://localhost:3000/api/listeners \
-    -H "Content-Type: application/json" \
-    -d '{"listener":"test","domain":"test.com"}'
-  ```
-
-### Web interface won't load
-
-**Solution:**
-1. Verify server is running
-2. Check for firewall blocking localhost connections
-3. Try accessing: `http://127.0.0.1:3000`
-4. Check browser console for errors (F12)
-
-## 🔬 Security Audit Workflow
-
-### Recommended Workflow
-
-1. **Collect Listeners**
-   - Browse target websites with FancyTracker extension active
-   - FancyListener automatically logs all detected listeners
-
-2. **Review in Dashboard**
-   - Monitor listeners in real-time
-   - Use grouping and filtering to organize findings
-
-3. **Export Data**
-   - Click "Export for Audit" button
-   - Save JSON file with timestamp
-
-4. **Analyze with AI**
-   ```bash
-   # Using Claude Code's web-security-auditor agent
-   claude code "Review the security implications of the listeners in fancylistener-audit-2025-12-11.json"
-   ```
-
-### Vulnerability Classes to Look For
-
-- 🔴 **XSS vulnerabilities** - Unsafe innerHTML, eval usage
-- 🟠 **postMessage security issues** - Missing origin validation
-- 🟡 **Unsafe origin handling** - Wildcard origins, no checks
-- 🔵 **Dangerous eval usage** - Dynamic code execution
-- 🟣 **Sensitive data exposure** - Tokens, credentials in messages
 
 ## 📊 Data Format
 
